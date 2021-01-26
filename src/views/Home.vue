@@ -21,7 +21,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 400px;
   width: 100%;
   background-color: rgba(221,221,221);
 }

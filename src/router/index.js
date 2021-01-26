@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import LandingPage1 from '../views/LandingPage1.vue'
+import LandingPage001 from '../views/LandingPage001.vue'
 import TwoColumnLayout from '../views/TwoColumnLayoutPage'
+import BurgerMenu001 from '../views/BurgerMenu001'
 
 const routes = [
   {
@@ -10,9 +11,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/landingpage1',
-    name: 'LandingPage1',
-    component: LandingPage1
+    path: '/burgermenu001',
+    name: 'BurgerMenu001',
+    component: BurgerMenu001
+  },
+  {
+    path: '/landingpage001',
+    name: 'LandingPage001',
+    component: LandingPage001
   },
   {
     path: '/twocolumnlayout',

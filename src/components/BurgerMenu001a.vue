@@ -2,10 +2,10 @@
     <nav>
         <div class="nav-container">
             <div>
-                <router-link class="logo-header" :to="{ name: 'Home' }">Vue Component Library</router-link>
+                <router-link class="logo-header" :to="{ name: 'BurgerMenu001' }">Burger Menu Slide Down</router-link>
             </div>
             <div>
-                <button class="nav-button" :display="display" @click="showNav = !showNav">
+                <button class="nav-button" @click="handleClick">
                     <div class="nav-line"></div>
                     <div class="nav-line"></div>
                     <div class="nav-line"></div>
@@ -13,13 +13,17 @@
             </div>
             
                 <ul class="desktop-nav">
-                    <li><router-link :to="{ name: 'Home' }">Home</router-link></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
             
         </div>
             <div class="nav-links" id="navlinks" v-if="showNav">
                 <ul>
-                    <li><router-link :to="{ name: 'Home' }" >Home</router-link></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
             </div>
     </nav>
@@ -31,11 +35,14 @@ export default {
     data() {
         return {
             showNav: false,
-            display: true
         }
     },
     methods: {
-
+        handleClick() {
+            this.showNav = !this.showNav
+        }
+        
+        
     }
 
 }
@@ -44,7 +51,7 @@ export default {
 <style scoped>
 
 nav {
-    background-color: #42b883;
+    background-color: #2b2b2b;
     width: 100%;
 }
 
@@ -61,7 +68,7 @@ nav {
 .logo-header {
     font-size: 1.6rem;
     font-weight: 500;
-    color: rgb(34, 34, 34);
+    color: rgb(185, 185, 185);
     text-decoration: none;
     
 }
@@ -73,9 +80,9 @@ nav {
 }
 
 .desktop-nav li {
-    
+    padding: 0px 30px;
     text-decoration: none;
-    color: rgb(34, 34, 34);
+    color: rgb(185, 185, 185);
 }
 
 .desktop-nav a {
@@ -101,14 +108,18 @@ nav {
 }
 
 .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 1.6rem;
-    text-decoration: none;
-    height: 300px;
+    list-style-type: none;
 }
 
 .nav-links li {
-    padding: 30px 0;
+    padding: 30px 50px;
+    list-style-type: none;
+    text-align: center;
 }
 
 .nav-links a {

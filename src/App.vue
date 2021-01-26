@@ -1,15 +1,15 @@
 <template>
 
-  <Navbar1 />
+  <VCNavbar />
 
   <router-view/>
 </template>
 
 <script>
-import Navbar1 from './components/Navbar1'
+import VCNavbar from './components/VCNavbar'
 
 export default {
-    components: { Navbar1 }
+    components: { VCNavbar }
 }
 </script>
 
