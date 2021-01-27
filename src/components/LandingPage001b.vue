@@ -55,7 +55,7 @@ export default {
 
 .button-container {
     display: flex;
-    justify-content: center;
+    
 }
 
 .button-1 {
@@ -66,7 +66,7 @@ export default {
     height: 50px;
     border-radius: 20px;
     width: 200px;
-    margin-right: 20px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -82,7 +82,7 @@ export default {
     height: 50px;
     border-radius: 20px;
     width: 200px;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
